@@ -10,7 +10,7 @@ export default function LocalBusinessSchema() {
         email: "info@blankdigital.co.uk",
         description:
           "Edinburgh digital agency specialising in website design, brand identity, logo design, SEO and generative engine optimisation for local tradespeople, restaurants and service businesses.",
-        image: "https://www.blankdigital.co.uk/images/blank-digital-edinburgh-office.jpg",
+        image: "https://www.blankdigital.co.uk/images/blank-digital-edinburgh-office.png",
         logo: "https://www.blankdigital.co.uk/images/logo.png",
         address: {
           "@type": "PostalAddress",

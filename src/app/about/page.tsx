@@ -127,7 +127,7 @@ export default function AboutPage() {
             <AnimatedSection delay={0.15}>
               <div className="overflow-hidden rounded-3xl">
                 <Image
-                  src="/images/blank-digital-edinburgh-office.jpg"
+                  src="/images/blank-digital-edinburgh-office.png"
                   alt="Blank Digital Edinburgh office with Edinburgh Castle visible through the window"
                   width={640}
                   height={480}
