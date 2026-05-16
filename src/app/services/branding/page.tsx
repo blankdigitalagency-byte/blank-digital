@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     "small business branding Edinburgh",
     "tradesperson branding",
   ],
+  openGraph: {
+    title: "Brand Identity Edinburgh | Blank Digital",
+    description: "Complete branding for Edinburgh businesses. Logo, colours, fonts and guidelines so everything looks consistent and professional.",
+    images: [{ url: "/images/brand-identity.jpg", width: 1200, height: 630, alt: "Brand identity design for Edinburgh businesses by Blank Digital" }],
+  },
 };
 
 const capabilities = [
@@ -28,6 +33,29 @@ const capabilities = [
   "Branded document templates (quotes, invoices, etc.)",
 ];
 
+const faqs = [
+  {
+    question: "What is brand identity and why do I need it?",
+    answer: "Brand identity is everything that makes your business visually recognisable — your logo, colours, fonts and how they are used together. A consistent brand makes you look more professional, builds trust with customers and helps you stand out from competitors. For tradespeople especially, a strong brand on your van, website and uniforms can significantly increase the number of enquiries you receive.",
+  },
+  {
+    question: "How is brand identity different from just a logo?",
+    answer: "A logo is one part of your brand. Brand identity includes your logo plus the colours, fonts, photography style and design rules that define how your business looks everywhere — on your website, van, business cards, social media and marketing materials. It ensures everything looks consistent and professional.",
+  },
+  {
+    question: "How long does a brand identity project take?",
+    answer: "A full brand identity project typically takes 3 to 6 weeks from first conversation to final delivery. This includes the discovery session, design concepts, revisions and the final brand guidelines document.",
+  },
+  {
+    question: "How much does brand identity design cost in Edinburgh?",
+    answer: "Brand identity packages start from around £799 and go up depending on the scope — the number of deliverables, complexity of the design and whether you need printed materials. We quote a fixed price for your specific requirements before any work begins.",
+  },
+  {
+    question: "Can I start with just a logo and add branding later?",
+    answer: "Yes. Many clients start with a logo and build their full brand identity over time as the business grows. We design logos with the full brand in mind from the start, so expanding later is straightforward.",
+  },
+];
+
 export default function BrandingPage() {
   return (
     <ServicePageTemplate
@@ -39,6 +67,7 @@ export default function BrandingPage() {
       icon={Palette}
       accentColor="text-[#ff5c1a]"
       bgColor="bg-orange-50"
+      faqs={faqs}
     />
   );
 }

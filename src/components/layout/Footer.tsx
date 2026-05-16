@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { AtSign, ExternalLink, Share2, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 const serviceLinks = [
   { label: "Logo Design", href: "/services/logos" },
@@ -39,36 +39,7 @@ export default function Footer() {
               Edinburgh digital agency helping local businesses get online, get
               found and get customers.
             </p>
-            <p className="text-xs text-gray-600 mb-6">Based in Edinburgh, Scotland.</p>
-            <div className="flex gap-3">
-              <a
-                href="https://instagram.com/blankdigital"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 hover:border-white/30 transition-colors"
-              >
-                <Share2 className="h-4 w-4" />
-              </a>
-              <a
-                href="https://linkedin.com/company/blankdigital"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 hover:border-white/30 transition-colors"
-              >
-                <ExternalLink className="h-4 w-4" />
-              </a>
-              <a
-                href="https://twitter.com/blankdigital"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter / X"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 hover:border-white/30 transition-colors"
-              >
-                <AtSign className="h-4 w-4" />
-              </a>
-            </div>
+            <p className="text-xs text-gray-600">Based in Edinburgh, Scotland.</p>
           </div>
 
           {/* Services */}
@@ -137,6 +108,9 @@ export default function Footer() {
           <div className="flex gap-6">
             <Link href="/about" className="text-xs text-gray-600 hover:text-gray-400 transition-colors">
               About
+            </Link>
+            <Link href="/blog" className="text-xs text-gray-600 hover:text-gray-400 transition-colors">
+              Blog
             </Link>
             <Link href="/contact" className="text-xs text-gray-600 hover:text-gray-400 transition-colors">
               Contact

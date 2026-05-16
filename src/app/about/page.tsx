@@ -123,15 +123,15 @@ export default function AboutPage() {
               </div>
             </AnimatedSection>
 
-            {/* Logo image */}
+            {/* Office image */}
             <AnimatedSection delay={0.15}>
-              <div className="aspect-square overflow-hidden rounded-3xl bg-[#f8fafc] flex items-center justify-center p-12 border border-black/5">
+              <div className="overflow-hidden rounded-3xl">
                 <Image
-                  src="/images/logo.png"
-                  alt="Blank Digital logo"
-                  width={320}
-                  height={200}
-                  className="w-full max-w-xs h-auto object-contain"
+                  src="/images/blank-digital-edinburgh-office.jpg"
+                  alt="Blank Digital Edinburgh office with Edinburgh Castle visible through the window"
+                  width={640}
+                  height={480}
+                  className="w-full h-auto object-cover"
                 />
               </div>
             </AnimatedSection>

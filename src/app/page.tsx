@@ -62,7 +62,7 @@ export default function HomePage() {
       <section className="relative h-72 overflow-hidden sm:h-96">
         <Image
           src="/images/edinburgh-calton.jpg"
-          alt="Edinburgh city view from Calton Hill"
+          alt="Edinburgh city view from Calton Hill, home of Blank Digital digital agency"
           fill
           className="object-cover object-center"
           quality={80}

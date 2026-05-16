@@ -1,6 +1,11 @@
-import { LucideIcon, CheckCircle2, MapPin } from "lucide-react";
+import { LucideIcon, CheckCircle2, MapPin, ChevronDown } from "lucide-react";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import CTAButton from "@/components/shared/CTAButton";
+
+export interface FAQ {
+  question: string;
+  answer: string;
+}
 
 interface ServicePageTemplateProps {
   title: string;
@@ -11,17 +16,18 @@ interface ServicePageTemplateProps {
   icon: LucideIcon;
   accentColor?: string;
   bgColor?: string;
+  faqs?: FAQ[];
 }
 
 const serviceAreas = [
-  "London",
-  "Manchester",
-  "Edinburgh",
-  "Birmingham",
-  "Leeds",
-  "Bristol",
-  "Glasgow",
-  "Liverpool",
+  "Edinburgh City Centre",
+  "Leith",
+  "Morningside",
+  "Stockbridge",
+  "Portobello",
+  "East Lothian",
+  "Midlothian",
+  "UK-Wide",
 ];
 
 export default function ServicePageTemplate({
@@ -33,9 +39,30 @@ export default function ServicePageTemplate({
   icon: Icon,
   accentColor = "text-[#ff5c1a]",
   bgColor = "bg-orange-50",
+  faqs,
 }: ServicePageTemplateProps) {
   return (
     <>
+      {faqs && faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            }).replace(/</g, "\\u003c"),
+          }}
+        />
+      )}
+
       {/* Hero */}
       <section className="hero-gradient hero-stripes relative overflow-hidden px-6 pb-24 pt-36">
         <div className="mx-auto max-w-4xl text-center">
@@ -85,18 +112,18 @@ export default function ServicePageTemplate({
         </div>
       </section>
 
-      {/* GEO Section */}
+      {/* Edinburgh GEO Section */}
       <section className="bg-[#f8fafc] px-6 py-24">
         <div className="mx-auto max-w-5xl">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <AnimatedSection>
               <p className={`mb-2 text-xs font-semibold uppercase tracking-widest ${accentColor}`}>
-                UK-Wide Coverage
+                Edinburgh and the Lothians
               </p>
               <h2 className="mb-6 text-4xl font-black tracking-tight text-[#0a0a0a] sm:text-5xl">
-                Serving Businesses
+                Serving Edinburgh
                 <br />
-                Across the UK
+                and Beyond
               </h2>
               <p className="mb-8 text-base leading-relaxed text-gray-500">
                 {geoDescription}
@@ -124,6 +151,37 @@ export default function ServicePageTemplate({
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      {faqs && faqs.length > 0 && (
+        <section className="bg-white px-6 py-24">
+          <div className="mx-auto max-w-3xl">
+            <AnimatedSection className="mb-12 text-center">
+              <p className={`mb-2 text-xs font-semibold uppercase tracking-widest ${accentColor}`}>
+                Common Questions
+              </p>
+              <h2 className="text-4xl font-black tracking-tight text-[#0a0a0a] sm:text-5xl">
+                Frequently Asked Questions
+              </h2>
+            </AnimatedSection>
+            <div className="space-y-4">
+              {faqs.map((faq, i) => (
+                <AnimatedSection key={faq.question} delay={i * 0.08}>
+                  <details className="group rounded-2xl border border-black/5 bg-[#f8fafc] p-6">
+                    <summary className="flex cursor-pointer items-center justify-between gap-4 text-base font-bold text-[#0a0a0a] marker:content-none list-none">
+                      {faq.question}
+                      <ChevronDown className="h-5 w-5 shrink-0 text-gray-400 transition-transform group-open:rotate-180" />
+                    </summary>
+                    <p className="mt-4 text-sm leading-relaxed text-gray-500">
+                      {faq.answer}
+                    </p>
+                  </details>
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Bottom CTA */}
       <section className="bg-[#ff5c1a] px-6 py-20">
