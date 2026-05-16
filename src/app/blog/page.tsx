@@ -2,63 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import AnimatedSection from "@/components/shared/AnimatedSection";
+import { posts } from "@/lib/blog-posts";
 
 export const metadata: Metadata = {
   title: "Blog | Digital Marketing Tips for Edinburgh Businesses",
   description:
     "Practical tips on websites, SEO, branding and digital marketing for Edinburgh tradespeople, restaurants and service businesses. No jargon, just useful advice.",
 };
-
-const posts = [
-  {
-    slug: "how-much-does-a-website-cost-edinburgh",
-    title: "How Much Does a Website Cost in Edinburgh?",
-    excerpt: "A straight-talking breakdown of what you can expect to pay for a professional business website in Edinburgh, and what you get at each price point.",
-    date: "2026-05-01",
-    category: "Web Design",
-    readTime: "5 min read",
-  },
-  {
-    slug: "local-seo-guide-edinburgh-tradespeople",
-    title: "Local SEO Guide for Edinburgh Tradespeople",
-    excerpt: "If you are a plumber, electrician or joiner in Edinburgh, here is exactly what you need to do to show up at the top of Google when customers search for your trade.",
-    date: "2026-04-18",
-    category: "SEO",
-    readTime: "8 min read",
-  },
-  {
-    slug: "what-is-generative-engine-optimisation",
-    title: "What is Generative Engine Optimisation and Why Does It Matter?",
-    excerpt: "ChatGPT and Google AI are changing how people find local businesses. Here is what Edinburgh business owners need to know about GEO and how to get ahead of competitors.",
-    date: "2026-04-05",
-    category: "GEO",
-    readTime: "6 min read",
-  },
-  {
-    slug: "do-edinburgh-restaurants-need-a-website",
-    title: "Do Edinburgh Restaurants Still Need a Website in 2026?",
-    excerpt: "With Google, TripAdvisor and Instagram all competing for attention, is a website still worth it for Edinburgh restaurants and cafes? The honest answer might surprise you.",
-    date: "2026-03-22",
-    category: "Web Design",
-    readTime: "4 min read",
-  },
-  {
-    slug: "how-to-choose-a-web-designer-edinburgh",
-    title: "How to Choose a Web Designer in Edinburgh: 7 Questions to Ask",
-    excerpt: "Not all web designers are equal. Before you hand over any money, here are the seven questions that will separate the good from the not so good.",
-    date: "2026-03-10",
-    category: "Web Design",
-    readTime: "7 min read",
-  },
-  {
-    slug: "google-business-profile-guide-edinburgh",
-    title: "How to Set Up and Optimise Your Google Business Profile in Edinburgh",
-    excerpt: "Your Google Business Profile is the single most important free tool for getting found locally. Here is how to set it up properly and make the most of it.",
-    date: "2026-02-28",
-    category: "SEO",
-    readTime: "6 min read",
-  },
-];
 
 const categoryColour: Record<string, string> = {
   "Web Design": "bg-blue-50 text-blue-700",

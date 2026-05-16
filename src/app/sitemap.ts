@@ -1,8 +1,14 @@
 import type { MetadataRoute } from "next";
+import { getAllSlugs } from "@/lib/blog-posts";
 
 const BASE_URL = "https://www.blankdigital.co.uk";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const blogRoutes = getAllSlugs().map((slug) => ({
+    path: `/blog/${slug}`,
+    priority: 0.7,
+  }));
+
   const routes = [
     { path: "", priority: 1 },
     { path: "/about", priority: 0.8 },
@@ -14,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/services/seo-optimisation", priority: 0.8 },
     { path: "/services/generative-engine-optimisation", priority: 0.8 },
     { path: "/blog", priority: 0.7 },
+    ...blogRoutes,
   ];
 
   return routes.map(({ path, priority }) => ({
