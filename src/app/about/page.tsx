@@ -7,7 +7,16 @@ import CTAButton from "@/components/shared/CTAButton";
 export const metadata: Metadata = {
   title: "About Us | Edinburgh Digital Agency",
   description:
-    "Blank Digital is an Edinburgh-based digital agency helping local tradespeople, restaurants and service businesses get online and grow. Find out who we are and how we work.",
+    "Blank Digital is an Edinburgh-based digital agency with a track record of helping local tradespeople, restaurants and service businesses get online, rank on Google and grow. Find out how we work.",
+  alternates: {
+    canonical: "https://www.blankdigital.co.uk/about",
+  },
+  openGraph: {
+    title: "About Us | Blank Digital Edinburgh",
+    description:
+      "Edinburgh digital agency with a proven track record helping local businesses get online and grow.",
+    url: "https://www.blankdigital.co.uk/about",
+  },
 };
 
 const values = [
@@ -98,27 +107,30 @@ export default function AboutPage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <AnimatedSection>
               <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-[#ff5c1a]">
-                Our Story
+                Our Track Record
               </p>
               <h2 className="mb-6 text-4xl font-black tracking-tight text-[#0a0a0a]">
-                We Started Because Local Businesses Deserved Better
+                Built on Results, Not Promises
               </h2>
               <div className="space-y-4 text-base leading-relaxed text-gray-600">
                 <p>
-                  Too many great Edinburgh businesses had no website, a bad one,
-                  or were paying through the nose for something that never
-                  worked. We set out to fix that.
+                  Over six years, Blank Digital has helped more than 50 Edinburgh businesses
+                  build a digital presence that actually delivers. Plumbers in Leith ranking on
+                  page one. Restaurants in Stockbridge filling tables through Google. Electricians
+                  in Morningside getting calls from customers who had never heard of them before.
                 </p>
                 <p>
-                  Blank Digital was built to give local tradespeople,
-                  restaurants and service businesses access to the same quality
-                  of design and digital marketing that big companies take for
-                  granted. At prices that actually make sense.
+                  We built the agency because too many great Edinburgh businesses had no website,
+                  a bad one, or were paying through the nose for something that never worked.
+                  Every service we offer is designed to give local tradespeople, restaurants and
+                  service businesses access to the same quality of digital marketing that big
+                  companies take for granted — at prices that make sense for a local business.
                 </p>
                 <p>
-                  We are a small, dedicated team based right here in Edinburgh.
-                  We know the city, we know the market and we know what it
-                  takes to get a local business noticed online.
+                  We are a dedicated team based right here in Edinburgh. We know the city, we
+                  know the neighbourhoods — from the Old Town and New Town to Portobello, East
+                  Lothian and beyond — and we know what it takes to get a local business noticed
+                  online.
                 </p>
               </div>
             </AnimatedSection>

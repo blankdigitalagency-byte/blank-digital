@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   title: "Blog | Digital Marketing Tips for Edinburgh Businesses",
   description:
     "Practical tips on websites, SEO, branding and digital marketing for Edinburgh tradespeople, restaurants and service businesses. No jargon, just useful advice.",
+  alternates: { canonical: "https://www.blankdigital.co.uk/blog" },
+  openGraph: {
+    title: "Blog | Digital Marketing Tips for Edinburgh Businesses",
+    description: "Practical tips on websites, SEO, branding and digital marketing for Edinburgh businesses.",
+    url: "https://www.blankdigital.co.uk/blog",
+  },
 };
 
 const categoryColour: Record<string, string> = {

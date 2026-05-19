@@ -6,16 +6,11 @@ export const metadata: Metadata = {
   title: "Brand Identity Edinburgh | Branding Agency for Local and Service Businesses",
   description:
     "Professional brand identity design for Edinburgh businesses. Logo, colours, fonts and brand guidelines that make your business look the part. Tradespeople, restaurants and service businesses welcome.",
-  keywords: [
-    "branding agency Edinburgh",
-    "brand identity Edinburgh",
-    "brand design Scotland",
-    "small business branding Edinburgh",
-    "tradesperson branding",
-  ],
+  alternates: { canonical: "https://www.blankdigital.co.uk/services/branding" },
   openGraph: {
     title: "Brand Identity Edinburgh | Blank Digital",
     description: "Complete branding for Edinburgh businesses. Logo, colours, fonts and guidelines so everything looks consistent and professional.",
+    url: "https://www.blankdigital.co.uk/services/branding",
     images: [{ url: "/images/brand-identity.jpg", width: 1200, height: 630, alt: "Brand identity design for Edinburgh businesses by Blank Digital" }],
   },
 };

@@ -16,13 +16,7 @@ export default function LocalBusinessSchema() {
           "@type": "PostalAddress",
           addressLocality: "Edinburgh",
           addressRegion: "Scotland",
-          postalCode: "EH1",
           addressCountry: "GB",
-        },
-        geo: {
-          "@type": "GeoCoordinates",
-          latitude: 55.9533,
-          longitude: -3.1883,
         },
         areaServed: [
           { "@type": "City", name: "Edinburgh" },
@@ -30,19 +24,65 @@ export default function LocalBusinessSchema() {
           { "@type": "Neighborhood", name: "Morningside" },
           { "@type": "Neighborhood", name: "Stockbridge" },
           { "@type": "Neighborhood", name: "Portobello" },
+          { "@type": "Neighborhood", name: "Newington" },
+          { "@type": "Neighborhood", name: "Corstorphine" },
           { "@type": "AdministrativeArea", name: "East Lothian" },
           { "@type": "AdministrativeArea", name: "Midlothian" },
           { "@type": "Country", name: "United Kingdom" },
+        ],
+        serviceType: [
+          "Website Design",
+          "Web Development",
+          "Logo Design",
+          "Brand Identity",
+          "SEO Optimisation",
+          "Generative Engine Optimisation",
+          "Digital Marketing",
         ],
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "Digital Agency Services",
           itemListElement: [
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Website Design Edinburgh" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Logo Design Edinburgh" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Brand Identity Edinburgh" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO Optimisation Edinburgh" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Generative Engine Optimisation" } },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Website Design Edinburgh",
+                description: "Custom website design and development for Edinburgh small businesses and tradespeople.",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Logo Design Edinburgh",
+                description: "Professional logo design for Edinburgh businesses.",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Brand Identity Edinburgh",
+                description: "Complete brand identity design for local Edinburgh businesses.",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "SEO Optimisation Edinburgh",
+                description: "Local SEO services to help Edinburgh businesses rank on Google.",
+              },
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Generative Engine Optimisation",
+                description: "GEO services to get Edinburgh businesses recommended by AI tools like ChatGPT and Perplexity.",
+              },
+            },
           ],
         },
         knowsAbout: [
@@ -75,14 +115,6 @@ export default function LocalBusinessSchema() {
         description: "Edinburgh digital agency for local businesses",
         publisher: { "@id": "https://www.blankdigital.co.uk/#business" },
         inLanguage: "en-GB",
-        potentialAction: {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate: "https://www.blankdigital.co.uk/?q={search_term_string}",
-          },
-          "query-input": "required name=search_term_string",
-        },
       },
     ],
   };

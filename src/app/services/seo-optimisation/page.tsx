@@ -6,18 +6,11 @@ export const metadata: Metadata = {
   title: "SEO Edinburgh | Local SEO for Tradespeople and Service Businesses",
   description:
     "Get your Edinburgh business to the top of Google. We specialise in local SEO for plumbers, electricians, joiners, restaurants and other service businesses across Edinburgh and the Lothians.",
-  keywords: [
-    "SEO Edinburgh",
-    "local SEO Edinburgh",
-    "SEO for tradespeople Edinburgh",
-    "Google ranking Edinburgh",
-    "plumber SEO Edinburgh",
-    "electrician SEO Edinburgh",
-    "restaurant SEO Edinburgh",
-  ],
+  alternates: { canonical: "https://www.blankdigital.co.uk/services/seo-optimisation" },
   openGraph: {
     title: "SEO Edinburgh | Local SEO for Tradespeople | Blank Digital",
     description: "Get your Edinburgh business to the top of Google. Local SEO that gets tradespeople and service businesses more calls and more customers.",
+    url: "https://www.blankdigital.co.uk/services/seo-optimisation",
     images: [{ url: "/images/developer-studio.jpg", width: 1200, height: 630, alt: "SEO and digital marketing team at Blank Digital Edinburgh" }],
   },
 };

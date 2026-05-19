@@ -6,17 +6,11 @@ export const metadata: Metadata = {
   title: "Generative Engine Optimisation (GEO) Edinburgh | AI Search for Local Businesses",
   description:
     "Get your Edinburgh business recommended by ChatGPT, Perplexity, Google AI and other AI tools. Blank Digital's GEO service puts local businesses in front of AI-generated answers.",
-  keywords: [
-    "generative engine optimisation Edinburgh",
-    "GEO Edinburgh",
-    "AI search optimisation Scotland",
-    "ChatGPT local business Edinburgh",
-    "AI SEO Edinburgh",
-    "generative AI local search",
-  ],
+  alternates: { canonical: "https://www.blankdigital.co.uk/services/generative-engine-optimisation" },
   openGraph: {
     title: "Generative Engine Optimisation (GEO) Edinburgh | Blank Digital",
     description: "Get your Edinburgh business recommended by ChatGPT, Google AI and Perplexity. The future of local search is here.",
+    url: "https://www.blankdigital.co.uk/services/generative-engine-optimisation",
     images: [{ url: "/images/developer-studio.jpg", width: 1200, height: 630, alt: "Generative engine optimisation strategy at Blank Digital Edinburgh" }],
   },
 };

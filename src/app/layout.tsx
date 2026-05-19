@@ -19,15 +19,6 @@ export const metadata: Metadata = {
   },
   description:
     "Edinburgh digital agency helping local tradespeople, restaurants and service businesses get professional websites, strong branding and top Google rankings. Free quotes available.",
-  keywords: [
-    "digital agency Edinburgh",
-    "website design Edinburgh",
-    "SEO Edinburgh",
-    "branding Edinburgh",
-    "web design Edinburgh",
-    "tradesperson website Edinburgh",
-    "local business website Scotland",
-  ],
   openGraph: {
     type: "website",
     locale: "en_GB",

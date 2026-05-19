@@ -6,17 +6,11 @@ export const metadata: Metadata = {
   title: "Website Design Edinburgh | Web Design for Tradespeople and Local Businesses",
   description:
     "Professional website design and development for Edinburgh businesses. Fast, mobile-friendly sites that rank on Google and turn visitors into customers. No upfront costs available.",
-  keywords: [
-    "website design Edinburgh",
-    "web design Edinburgh",
-    "tradesperson website Edinburgh",
-    "small business website Scotland",
-    "Edinburgh web developer",
-    "restaurant website Edinburgh",
-  ],
+  alternates: { canonical: "https://www.blankdigital.co.uk/services/web-development" },
   openGraph: {
     title: "Website Design Edinburgh | Blank Digital",
     description: "Fast, mobile-friendly websites built for Edinburgh tradespeople and local businesses. Rank on Google and turn visitors into customers.",
+    url: "https://www.blankdigital.co.uk/services/web-development",
     images: [{ url: "/images/web-design-studio.jpg", width: 1200, height: 630, alt: "Web design studio at Blank Digital Edinburgh" }],
   },
 };

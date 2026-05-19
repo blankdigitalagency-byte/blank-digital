@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   title: "Services | Web Design, Branding and SEO for Edinburgh Businesses",
   description:
     "Website design, logo and brand identity, SEO and generative engine optimisation for Edinburgh tradespeople and local businesses. See all services and pricing.",
+  alternates: { canonical: "https://www.blankdigital.co.uk/services" },
+  openGraph: {
+    title: "Services | Web Design, Branding and SEO for Edinburgh Businesses",
+    description: "Website design, logo and brand identity, SEO and GEO for Edinburgh tradespeople and local businesses.",
+    url: "https://www.blankdigital.co.uk/services",
+  },
 };
 
 const services = [

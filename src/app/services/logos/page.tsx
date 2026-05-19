@@ -6,16 +6,11 @@ export const metadata: Metadata = {
   title: "Logo Design Edinburgh | Professional Logo Designer for Local Businesses",
   description:
     "Get a professional logo for your Edinburgh business. We design logos for tradespeople, restaurants, shops and service businesses. From 299 pounds. Free consultation.",
-  keywords: [
-    "logo design Edinburgh",
-    "logo designer Edinburgh",
-    "logo design Scotland",
-    "small business logo Edinburgh",
-    "tradesperson logo design",
-  ],
+  alternates: { canonical: "https://www.blankdigital.co.uk/services/logos" },
   openGraph: {
     title: "Logo Design Edinburgh | Blank Digital",
     description: "Professional logo design for Edinburgh businesses. Clean, memorable logos that give your business instant credibility.",
+    url: "https://www.blankdigital.co.uk/services/logos",
     images: [{ url: "/images/brand-identity.jpg", width: 1200, height: 630, alt: "Brand identity and logo design by Blank Digital Edinburgh" }],
   },
 };

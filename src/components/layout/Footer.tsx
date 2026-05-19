@@ -101,7 +101,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/8 pt-8 sm:flex-row">
+        {/* NAP block for local SEO consistency */}
+        <div className="mt-10 rounded-2xl border border-white/5 bg-white/3 px-6 py-4 text-center text-xs text-gray-500">
+          Blank Digital Ltd &middot; Edinburgh, Scotland &middot;{" "}
+          <a href="mailto:info@blankdigital.co.uk" className="hover:text-gray-400 transition-colors">
+            info@blankdigital.co.uk
+          </a>
+        </div>
+
+        <div className="mt-6 flex flex-col items-center justify-between gap-4 border-t border-white/8 pt-8 sm:flex-row">
           <p className="text-xs text-gray-600">
             &copy; {new Date().getFullYear()} Blank Digital Ltd. All rights reserved. Edinburgh, Scotland.
           </p>

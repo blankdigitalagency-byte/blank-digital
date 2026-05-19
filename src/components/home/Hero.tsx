@@ -44,7 +44,7 @@ export default function Hero() {
           {...fadeUp(0.2)}
           className="mb-6 text-5xl font-black leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-[80px]"
         >
-          Get Your Business
+          Get Your Edinburgh Business
           <br />
           Found Online.
         </motion.h1>

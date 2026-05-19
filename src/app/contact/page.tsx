@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Contact | Get a Free Quote from Edinburgh's Blank Digital",
   description:
     "Get in touch with Blank Digital Edinburgh. Free quotes for websites, branding and SEO for local businesses. We get back to you the same day.",
+  alternates: { canonical: "https://www.blankdigital.co.uk/contact" },
+  openGraph: {
+    title: "Contact Blank Digital | Free Quote for Edinburgh Businesses",
+    description: "Get in touch with Blank Digital Edinburgh. Free quotes for websites, branding and SEO. We get back to you the same day.",
+    url: "https://www.blankdigital.co.uk/contact",
+  },
 };
 
 const info = [

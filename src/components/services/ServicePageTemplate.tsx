@@ -43,6 +43,28 @@ export default function ServicePageTemplate({
 }: ServicePageTemplateProps) {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: title,
+            description: subtitle,
+            provider: {
+              "@type": "LocalBusiness",
+              name: "Blank Digital",
+              "@id": "https://www.blankdigital.co.uk/#business",
+            },
+            areaServed: {
+              "@type": "City",
+              name: "Edinburgh",
+            },
+            serviceType: title,
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
+
       {faqs && faqs.length > 0 && (
         <script
           type="application/ld+json"
