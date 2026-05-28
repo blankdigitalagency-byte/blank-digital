@@ -8,14 +8,14 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Edinburgh Digital Agency | Websites, Branding and SEO for Local Businesses",
+  title: "Edinburgh Digital Agency | Websites, SEO & GEO for Local Businesses",
   description:
-    "Blank Digital is Edinburgh's go-to agency for small businesses and tradespeople. We build websites, create brands and get you ranking on Google. Free quotes available.",
+    "Blank Digital is Edinburgh's go-to agency for small businesses and tradespeople. We build websites, create brands and get you ranking on Google and AI search. Free quotes available.",
   alternates: {
     canonical: "https://www.blankdigital.co.uk",
   },
   openGraph: {
-    title: "Edinburgh Digital Agency | Websites, Branding and SEO for Local Businesses",
+    title: "Edinburgh Digital Agency | Websites, SEO & GEO for Local Businesses",
     description:
       "Blank Digital is Edinburgh's go-to agency for small businesses and tradespeople. We build websites, create brands and get you ranking on Google.",
     url: "https://www.blankdigital.co.uk",

@@ -14,17 +14,17 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.blankdigital.co.uk"),
   title: {
-    default: "Blank Digital | Edinburgh Digital Agency for Local Businesses",
+    default: "Blank Digital | Edinburgh Digital Agency | Websites, SEO & GEO",
     template: "%s | Blank Digital Edinburgh",
   },
   description:
-    "Edinburgh digital agency helping local tradespeople, restaurants and service businesses get professional websites, strong branding and top Google rankings. Free quotes available.",
+    "Edinburgh digital agency helping local tradespeople, restaurants and service businesses get professional websites, strong branding, top Google rankings and GEO visibility. Free quotes available.",
   openGraph: {
     type: "website",
     locale: "en_GB",
     url: "https://www.blankdigital.co.uk",
     siteName: "Blank Digital",
-    title: "Blank Digital | Edinburgh Digital Agency for Local Businesses",
+    title: "Blank Digital | Edinburgh Digital Agency | Websites, SEO & GEO",
     description:
       "Edinburgh digital agency helping local tradespeople, restaurants and service businesses get online and grow.",
     images: [
