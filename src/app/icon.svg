@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Dark background with rounded corners -->
+  <rect width="512" height="512" fill="#0a0a0a" rx="96"/>
+
+  <!-- Bold B letterform -->
+  <text
+    x="68"
+    y="390"
+    font-family="Arial Black, Impact, sans-serif"
+    font-weight="900"
+    font-size="380"
+    fill="white"
+    letter-spacing="-10"
+  >B</text>
+
+  <!-- Orange corner bracket (top-left accent, echoing the logo mark) -->
+  <rect x="58" y="58" width="88" height="22" fill="#ff5c1a"/>
+  <rect x="58" y="58" width="22" height="88" fill="#ff5c1a"/>
+</svg>
