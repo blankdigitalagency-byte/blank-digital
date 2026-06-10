@@ -38,11 +38,11 @@ We do not use your data for unsolicited marketing, and we will not send you emai
   },
   {
     title: "How We Store Your Data",
-    content: `Contact form submissions are processed via Web3Forms and delivered to our email inbox. We do not operate a separate CRM or database of contacts.
+    content: `Contact form submissions are processed via a third-party form service and delivered to our email inbox. We do not operate a separate CRM or database of contacts.
 
-Emails you send us are stored in our email system (Google Workspace) and retained for as long as necessary to fulfil the service or for accounting and legal purposes (typically up to 6 years).
+Emails you send us are stored in our email system and retained for as long as necessary to fulfil the service or for accounting and legal purposes (typically up to 6 years).
 
-Our website is hosted on Vercel, whose infrastructure is based in the European Union and United States. Vercel's privacy policy is available at vercel.com/legal/privacy-policy.`,
+Our website is hosted by a reputable cloud hosting provider with infrastructure based in the European Union and United States, operating under standard contractual clauses for international data transfers.`,
   },
   {
     title: "Your Legal Rights",
@@ -67,11 +67,11 @@ If we add any additional cookies in the future we will update this policy and di
   },
   {
     title: "Third-Party Services",
-    content: `We use the following third-party services that may process data as part of operating our website:
+    content: `We use third-party services that may process data as part of operating our website, including:
 
-• **Web3Forms** (web3forms.com) — processes contact form submissions
-• **Vercel** (vercel.com) — website hosting and anonymous analytics
-• **Google Workspace** — email
+• A **contact form provider** — processes form submissions before delivering them to our inbox
+• A **cloud hosting provider** — hosts the website and provides anonymous, privacy-friendly analytics
+• An **email provider** — stores and delivers email communications
 
 Each of these providers processes data in accordance with their own privacy policies and applicable data protection law.`,
   },
