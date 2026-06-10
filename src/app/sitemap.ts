@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/services/seo-optimisation", priority: 0.8 },
     { path: "/services/generative-engine-optimisation", priority: 0.8 },
     { path: "/blog", priority: 0.7 },
+    { path: "/free-geo-audit", priority: 0.9 },
     ...blogRoutes,
   ];
 

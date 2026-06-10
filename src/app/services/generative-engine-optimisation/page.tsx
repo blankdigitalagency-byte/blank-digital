@@ -53,16 +53,44 @@ const faqs = [
 
 export default function GEOPage() {
   return (
-    <ServicePageTemplate
-      title="Generative Engine Optimisation"
-      subtitle="When someone asks ChatGPT or Google AI to recommend a local plumber, electrician or restaurant in Edinburgh, your business should be the answer. We make that happen."
-      capabilities={capabilities}
-      geoDescription="AI tools like ChatGPT, Perplexity and Google's AI Overviews are changing how people find local businesses. Edinburgh businesses that get GEO right now will dominate local search for years to come. We specialise in helping Scottish tradespeople and service businesses become the trusted answer across every AI platform."
-      ctaText="Get AI Ready"
-      icon={Zap}
-      accentColor="text-purple-600"
-      bgColor="bg-purple-50"
-      faqs={faqs}
-    />
+    <>
+      <ServicePageTemplate
+        title="Generative Engine Optimisation"
+        subtitle="When someone asks ChatGPT or Google AI to recommend a local plumber, electrician or restaurant in Edinburgh, your business should be the answer. We make that happen."
+        capabilities={capabilities}
+        geoDescription="AI tools like ChatGPT, Perplexity and Google's AI Overviews are changing how people find local businesses. Edinburgh businesses that get GEO right now will dominate local search for years to come. We specialise in helping Scottish tradespeople and service businesses become the trusted answer across every AI platform."
+        ctaText="Get AI Ready"
+        icon={Zap}
+        accentColor="text-purple-600"
+        bgColor="bg-purple-50"
+        faqs={faqs}
+      />
+
+      {/* Free GEO Audit CTA */}
+      <section className="bg-purple-50 px-6 py-20">
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-purple-100">
+            <Zap className="h-7 w-7 text-purple-600" />
+          </div>
+          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-purple-600">
+            Free Offer
+          </p>
+          <h2 className="mb-4 text-4xl font-black tracking-tight text-[#0a0a0a] sm:text-5xl">
+            Not Sure Where You Stand?
+          </h2>
+          <p className="mx-auto mb-8 max-w-xl text-base leading-relaxed text-gray-500">
+            We will check whether your Edinburgh business shows up in ChatGPT,
+            Perplexity and Google AI for free. No obligation, results within
+            one business day.
+          </p>
+          <a
+            href="/free-geo-audit"
+            className="inline-flex items-center gap-3 rounded-full bg-[#0a0a0a] px-7 py-4 text-base font-semibold text-white hover:bg-[#1a1a1a] transition-colors"
+          >
+            Get Your Free GEO Audit →
+          </a>
+        </div>
+      </section>
+    </>
   );
 }

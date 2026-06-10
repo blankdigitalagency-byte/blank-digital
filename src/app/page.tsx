@@ -91,6 +91,22 @@ export default function HomePage() {
       />
 
       <Hero />
+
+      {/* Free GEO Audit banner */}
+      <div className="bg-[#0a0a0a] px-6 py-4">
+        <div className="mx-auto max-w-5xl flex flex-col items-center justify-between gap-3 sm:flex-row">
+          <p className="text-sm text-white/80 text-center sm:text-left">
+            <span className="font-semibold text-white">New:</span> Find out if your Edinburgh business shows up in ChatGPT and Google AI.
+          </p>
+          <a
+            href="/free-geo-audit"
+            className="shrink-0 rounded-full bg-[#ff5c1a] px-5 py-2 text-sm font-semibold text-white hover:bg-[#e64d0e] transition-colors whitespace-nowrap"
+          >
+            Get a Free GEO Audit →
+          </a>
+        </div>
+      </div>
+
       <ServiceTicker />
       <ServicesGrid />
 
