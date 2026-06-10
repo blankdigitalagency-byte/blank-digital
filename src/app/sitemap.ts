@@ -19,6 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/services/web-development", priority: 0.8 },
     { path: "/services/seo-optimisation", priority: 0.8 },
     { path: "/services/generative-engine-optimisation", priority: 0.8 },
+    { path: "/pricing", priority: 0.8 },
+    { path: "/privacy-policy", priority: 0.3 },
     { path: "/blog", priority: 0.7 },
     { path: "/free-geo-audit", priority: 0.9 },
     ...blogRoutes,

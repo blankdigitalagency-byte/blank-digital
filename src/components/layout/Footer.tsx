@@ -117,11 +117,17 @@ export default function Footer() {
             <Link href="/about" className="text-xs text-gray-600 hover:text-gray-400 transition-colors">
               About
             </Link>
+            <Link href="/pricing" className="text-xs text-gray-600 hover:text-gray-400 transition-colors">
+              Pricing
+            </Link>
             <Link href="/blog" className="text-xs text-gray-600 hover:text-gray-400 transition-colors">
               Blog
             </Link>
             <Link href="/contact" className="text-xs text-gray-600 hover:text-gray-400 transition-colors">
               Contact
+            </Link>
+            <Link href="/privacy-policy" className="text-xs text-gray-600 hover:text-gray-400 transition-colors">
+              Privacy Policy
             </Link>
           </div>
         </div>
